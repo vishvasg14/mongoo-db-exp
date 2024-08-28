@@ -6,12 +6,13 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.MongoDBtest.methodInterface.*;
 import com.MongoDBtest.Dto.RequestStudentDto;
 import com.MongoDBtest.Model.Students;
 import com.MongoDBtest.Repoitory.StudentsRepository;
 
 @Service
-public class MongoDBService {
+public class MongoDBService implements ServiceMethods{
 		
 
 	@Autowired
@@ -22,6 +23,9 @@ public class MongoDBService {
 		 s.setName(requestStudentDto.getName());
 		 s.setAddress(requestStudentDto.getAddress());
 		 s.setRoll_no(requestStudentDto.getRoll_no());
+		 s.setCourse(requestStudentDto.getCourse());
+		 s.setUniversity(requestStudentDto.getUniversity());
+		 s.setDescription(requestStudentDto.getDescription());
 		studentsRepository.save(s);
 		return "Data added to DB!!";
 	}
