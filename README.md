@@ -33,3 +33,6 @@ This is a simple RESTful application built with Spring Boot using the MVC (Model
 ```bash
 git clone https://github.com/vishvasg14/mongoo-db-exp.git
 cd simple-rest-mongodb
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
