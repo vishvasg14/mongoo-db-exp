@@ -2,10 +2,11 @@
 
 ## Project Overview
 
-This is a simple RESTful application built with Spring Boot that uses MongoDB as the database. The application provides CRUD operations for managing resources (e.g., users, products, etc.). It's designed to be a starting point for building more complex applications.
+This is a simple RESTful application built with Spring Boot using the MVC (Model-View-Controller) architecture, and MongoDB as the database. The application provides CRUD operations for managing resources (e.g., users, products, etc.). It's designed to be a starting point for building more complex applications.
 
 ## Features
 
+- **MVC Architecture**: The project is structured based on the MVC pattern, separating the application logic, data, and user interface.
 - **CRUD Operations**: Create, Read, Update, and Delete operations for managing data.
 - **MongoDB Integration**: Uses MongoDB as the NoSQL database for storing application data.
 - **RESTful API**: Exposes a set of RESTful endpoints to interact with the data.
@@ -14,7 +15,7 @@ This is a simple RESTful application built with Spring Boot that uses MongoDB as
 ## Technologies Used
 
 - **Java 17**: Programming language.
-- **Spring Boot 3**: Framework for building the REST API.
+- **Spring Boot 3**: Framework for building the REST API with MVC architecture.
 - **MongoDB**: NoSQL database for storing data.
 - **Maven**: Build and dependency management tool.
 - **Postman**: For testing API endpoints (optional).
