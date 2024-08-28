@@ -30,5 +30,5 @@ This is a simple RESTful application built with Spring Boot that uses MongoDB as
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/simple-rest-mongodb.git
+git clone https://github.com/vishvasg14/mongoo-db-exp.git
 cd simple-rest-mongodb
