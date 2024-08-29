@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,8 +36,13 @@ public class MongoDBController {
 		return mongoDBService.getStudents();
 	}
 	
-	@GetMapping("/get/{id}")
-	public Optional<Students> getStudent(@PathVariable int id) {
-		return mongoDBService.getOneProfile(id);
+	@GetMapping("/get/{rollNO}")
+	public Optional<Students> getStudent(@PathVariable int rollNO) {
+		return mongoDBService.getOneProfile(rollNO);
+	}
+	
+	@PutMapping("/update/{rollNO}")
+	public String updateProfile(@RequestBody RequestStudentDto requestStudentDto, @PathVariable int rollNO) {
+		return mongoDBService.updateProfile(requestStudentDto, rollNO);
 	}
 }

@@ -13,4 +13,8 @@ public interface ServiceMethods {
 	List<Students> getStudents();
 	
 	Optional<Students> getOneProfile(int id);
+	
+	String updateProfile( RequestStudentDto requestStudentDto, int rollNO);
+	
+	
 }

@@ -2,7 +2,7 @@ package com.MongoDBtest.Dto;
 
 public class RequestStudentDto {
 
-	private Integer roll_no;
+	private int roll_no;
 	private String name;
 	private String address;
 	private String course;
@@ -10,11 +10,11 @@ public class RequestStudentDto {
 	private String description;
 	private int age;
 
-	public Integer getRoll_no() {
+	public int getRoll_no() {
 		return roll_no;
 	}
 
-	public void setRoll_no(Integer roll_no) {
+	public void setRoll_no(int roll_no) {
 		this.roll_no = roll_no;
 	}
 
@@ -67,7 +67,7 @@ public class RequestStudentDto {
 		this.age = age;
 	}
 
-	public RequestStudentDto(Integer roll_no, String name, String address, String course, String university,
+	public RequestStudentDto(int roll_no, String name, String address, String course, String university,
 			String description, int age) {
 		super();
 		this.roll_no = roll_no;
