@@ -25,7 +25,9 @@ This is a simple RESTful application built with Spring Boot using the MVC (Model
 - **Java 17**: Make sure Java is installed and set up on your machine.
 - **Maven**: Ensure Maven is installed for building and running the project.
 - **MongoDB**: MongoDB should be installed and running locally or accessible via a cloud service.
-
+  
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 ## Project Setup
 
 ### 1. Clone the Repository
@@ -33,3 +35,5 @@ This is a simple RESTful application built with Spring Boot using the MVC (Model
 ```bash
 git clone https://github.com/vishvasg14/mongoo-db-exp.git
 cd simple-rest-mongodb
+
+
